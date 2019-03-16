@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+nhập nhiệt độ C
+<input type="text" id="inputC"/>
+<button type="button" onclick="conver()">Conver</button>
+kết quả!
+<p id="outF"></p>
+<script>
+    function conver() {
+       let oC = parseFloat(document.getElementById("inputC").value);
+       let oF = 1.8*oC + 32;
+       document.getElementById("outF").innerHTML = "nhiệt độ F là : " + oF;
+    }
+</script>
+</body>
+</html>
